@@ -1,31 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>The Hippocratic Oath Of Software Engineering</title>
-
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/11.3.1/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/11.3.1/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/11.3.1/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/11.3.1/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/11.3.1/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/11.3.1/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/11.3.1/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/11.3.1/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/11.3.1/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/11.3.1/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <meta name="description" content="The original Hippocratic Oath of software engineering by Attila Vago. A set of rules by which designing, architecting and developing software should yield more human-centric and ethically sound results.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-IIED/eyOkM6ihtOiQsX2zizxFBphgnv1zbe1bKA+njdFzkr6cDNy16jfIKWu4FNH" crossorigin="anonymous">
   </head>
   <body>
-  <h1><span>The Original </span><span>Hippocratic Oath Of Software Engineering</span></h1>
-  <p>As first seen on <a href="https://medium.com/gitconnected/software-engineering-needs-a-hippocratic-oath-d2bc4a0ac3d7?sk=4c4d52aebabd73d78be475bc1db7fba3">Medium.com</a></p>
+  <header>
+    <h1><span class="small-h1">The Original </span><span>Hippocratic Oath Of Software Engineering</span></h1>
+    <p>as first seen on <a class="button-link" href="https://medium.com/gitconnected/software-engineering-needs-a-hippocratic-oath-d2bc4a0ac3d7?sk=4c4d52aebabd73d78be475bc1db7fba3"><i class="fab fa-medium-m"></i>Medium.com</a></p>
+  </header>
   <article>
     <section>
       <p>I swear to fulfill, to the best of my ability and judgment, this covenant:</p>
@@ -64,11 +54,18 @@
     </section>
 
     <section>
-      <p>If I do not violate this oath, may I enjoy life and art, respected while I live and remembered with affection thereafter. May I always act so as to preserve the finest traditions of my calling and may I long experience the joy of writing software that makes the world a better place one line of code at a time.</p>
+      <p>If I do not violate this oath, may I enjoy life and art, respected while I live and be remembered with affection thereafter. May I always act so as to preserve the finest traditions of my calling and may I long experience the joy of writing software that makes the world a better place one line of code at a time.</p>
     </section>
   </article>
+
+  <h2>Featured in</h2>
+  <a class="button-link" href="https://blog.medium.com/why-thousands-of-fake-scientific-papers-are-flooding-academic-journals-0ca31aa9882a"><i class="fab fa-medium-m"></i>Why thousands of fake...</a>
+  <a class="button-link" href="https://blog.medium.com/why-every-profession-needs-a-hippocratic-oath-43111ee7614f"><i class="fab fa-medium-m"></i>Why every profession...</a>
+
   <section id="links">
-    <p>Read the article that started it all on <a href="https://medium.com/gitconnected/software-engineering-needs-a-hippocratic-oath-d2bc4a0ac3d7?sk=4c4d52aebabd73d78be475bc1db7fba3">Medium.com</a></p>
+    <p>Read the article that started it all on <a class="button-link" href="https://medium.com/gitconnected/software-engineering-needs-a-hippocratic-oath-d2bc4a0ac3d7?sk=4c4d52aebabd73d78be475bc1db7fba3"><i class="fab fa-medium-m"></i>Medium.com</a></p>
+    <p>The open-source project on <a class="button-link" href="https://github.com/attilavago/thehippocraticoathofsoftwareengineering"><i class="fab fa-github"></i>GitHub</a></p>
+    <p>Other great coding and software development articles on <a class="button-link" href="https://medium.com/@attilavago/list/coding-software-development-d123369e3636"><i class="fab fa-medium-m"></i>Medium.com</a></p>
   </section>
 
   <footer>
@@ -79,42 +76,6 @@
 
     <script>
       document.getElementById("year").innerHTML = new Date().getFullYear().toString();
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
     </script>
   </body>
 </html>

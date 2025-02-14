@@ -1,0 +1,71 @@
+body {
+    font-family: "Source Code Pro", Arial, Helvetica, sans-serif;
+    background: lightyellow;
+    padding-left: 35px;
+    padding-right: 35px;
+    justify-items: center;
+    display: grid
+
+}
+
+header {
+    margin-bottom: 70px;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.button-link {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    margin-top: 3px;
+    display: inline-block;
+}
+
+a > i {
+    border-right: 1px dotted;
+    margin-right: 5px;
+    padding-right: 5px;
+}
+
+article {
+    max-width: 800px;
+    margin-bottom: 70px;
+}
+
+h1 {
+    text-transform: uppercase;
+    display: grid;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 1em;
+}
+header > p {
+    margin-top: 0;
+}
+
+.small-h1 {
+    font-size: 0.6em;
+}
+
+#links {
+    text-align: center;
+    margin-top: 70px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 70px;
+}
+
+@media only screen and (max-width: 920px) {
+    .button-link {
+        white-space: nowrap;
+    }
+}
